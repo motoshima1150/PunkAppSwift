@@ -20,8 +20,23 @@ class PankAppTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let testBundle = Bundle(for: type(of: self))
+        let path = testBundle.url(forResource: "random", withExtension: "json")!
+        let data = try! Data(contentsOf: path, options: .uncached)
+        
+        let decorder = JSONDecoder()
+        decorder.keyDecodingStrategy = .convertFromSnakeCase
+        let beers = try! decorder.decode([Beer].self, from: data)
+        
+        XCTAssertFalse(beers.isEmpty)
+        let sampleBeer = beers.first!
+        print(sampleBeer.id)
+        print(sampleBeer.name)
+        XCTAssertEqual(sampleBeer.id, "91")
+        XCTAssertEqual(sampleBeer.name, "Dead Pony Club")
+        XCTAssertEqual(sampleBeer.imageURL.absoluteString, "https://images.punkapi.com/v2/91.png")
+        XCTAssertEqual(sampleBeer.boilVolume.value, 25.0)
+        XCTAssertEqual(sampleBeer.boilVolume.unit.symbol, UnitVolume.liters.symbol)
     }
 
     func testPerformanceExample() {

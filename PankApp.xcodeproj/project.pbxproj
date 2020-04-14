@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D74E77432444B62C007315E6 /* BeersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E77422444B62C007315E6 /* BeersRequest.swift */; };
+		D74E77452444BCBA007315E6 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E77442444BCBA007315E6 /* APIService.swift */; };
+		D74E77472444BCF7007315E6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E77462444BCF7007315E6 /* Request.swift */; };
+		D74E77492444BDC0007315E6 /* APIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E77482444BDC0007315E6 /* APIServiceError.swift */; };
+		D74E774D2444C668007315E6 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E774C2444C668007315E6 /* Beer.swift */; };
+		D74E774F24461E9B007315E6 /* random.json in Resources */ = {isa = PBXBuildFile; fileRef = D74E774E24461E9B007315E6 /* random.json */; };
+		D74E7752244632AD007315E6 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E7751244632AD007315E6 /* Ingredients.swift */; };
+		D74E7754244632C5007315E6 /* Hop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E7753244632C5007315E6 /* Hop.swift */; };
+		D74E7756244632D8007315E6 /* Malt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E7755244632D8007315E6 /* Malt.swift */; };
+		D74E7758244632E9007315E6 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E7757244632E9007315E6 /* Method.swift */; };
+		D74E775A24463310007315E6 /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E775924463310007315E6 /* Fermentation.swift */; };
+		D74E775C2446332D007315E6 /* MashTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E775B2446332D007315E6 /* MashTemperature.swift */; };
+		D74E775E24463344007315E6 /* UnitValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E775D24463344007315E6 /* UnitValue.swift */; };
 		D753959D2444B28E00981849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753959C2444B28E00981849 /* AppDelegate.swift */; };
 		D753959F2444B28E00981849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753959E2444B28E00981849 /* SceneDelegate.swift */; };
 		D75395A12444B28E00981849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75395A02444B28E00981849 /* ContentView.swift */; };
@@ -27,6 +40,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D74E77422444B62C007315E6 /* BeersRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersRequest.swift; sourceTree = "<group>"; };
+		D74E77442444BCBA007315E6 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D74E77462444BCF7007315E6 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		D74E77482444BDC0007315E6 /* APIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceError.swift; sourceTree = "<group>"; };
+		D74E774C2444C668007315E6 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		D74E774E24461E9B007315E6 /* random.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = random.json; sourceTree = "<group>"; };
+		D74E7751244632AD007315E6 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
+		D74E7753244632C5007315E6 /* Hop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hop.swift; sourceTree = "<group>"; };
+		D74E7755244632D8007315E6 /* Malt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Malt.swift; sourceTree = "<group>"; };
+		D74E7757244632E9007315E6 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		D74E775924463310007315E6 /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
+		D74E775B2446332D007315E6 /* MashTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashTemperature.swift; sourceTree = "<group>"; };
+		D74E775D24463344007315E6 /* UnitValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitValue.swift; sourceTree = "<group>"; };
 		D75395992444B28E00981849 /* PankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D753959C2444B28E00981849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D753959E2444B28E00981849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +84,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D74E77412444B5D8007315E6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D74E774A2444C435007315E6 /* BeersRequest */,
+				D74E77442444BCBA007315E6 /* APIService.swift */,
+				D74E77482444BDC0007315E6 /* APIServiceError.swift */,
+				D74E77462444BCF7007315E6 /* Request.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D74E774A2444C435007315E6 /* BeersRequest */ = {
+			isa = PBXGroup;
+			children = (
+				D74E77422444B62C007315E6 /* BeersRequest.swift */,
+			);
+			path = BeersRequest;
+			sourceTree = "<group>";
+		};
+		D74E774B2444C650007315E6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D74E774C2444C668007315E6 /* Beer.swift */,
+				D74E775924463310007315E6 /* Fermentation.swift */,
+				D74E7751244632AD007315E6 /* Ingredients.swift */,
+				D74E7753244632C5007315E6 /* Hop.swift */,
+				D74E7755244632D8007315E6 /* Malt.swift */,
+				D74E775B2446332D007315E6 /* MashTemperature.swift */,
+				D74E7757244632E9007315E6 /* Method.swift */,
+				D74E775D24463344007315E6 /* UnitValue.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		D75395902444B28E00981849 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +142,8 @@
 				D753959C2444B28E00981849 /* AppDelegate.swift */,
 				D753959E2444B28E00981849 /* SceneDelegate.swift */,
 				D75395A02444B28E00981849 /* ContentView.swift */,
+				D74E774B2444C650007315E6 /* Entity */,
+				D74E77412444B5D8007315E6 /* Service */,
 				D75395A22444B29000981849 /* Assets.xcassets */,
 				D75395A72444B29000981849 /* LaunchScreen.storyboard */,
 				D75395AA2444B29000981849 /* Info.plist */,
@@ -101,6 +163,7 @@
 		D75395B22444B29100981849 /* PankAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				D74E774E24461E9B007315E6 /* random.json */,
 				D75395B32444B29100981849 /* PankAppTests.swift */,
 				D75395B52444B29100981849 /* Info.plist */,
 			);
@@ -198,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74E774F24461E9B007315E6 /* random.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +273,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D753959D2444B28E00981849 /* AppDelegate.swift in Sources */,
+				D74E7752244632AD007315E6 /* Ingredients.swift in Sources */,
+				D74E775A24463310007315E6 /* Fermentation.swift in Sources */,
+				D74E77452444BCBA007315E6 /* APIService.swift in Sources */,
+				D74E77492444BDC0007315E6 /* APIServiceError.swift in Sources */,
+				D74E7756244632D8007315E6 /* Malt.swift in Sources */,
+				D74E775C2446332D007315E6 /* MashTemperature.swift in Sources */,
+				D74E774D2444C668007315E6 /* Beer.swift in Sources */,
+				D74E7754244632C5007315E6 /* Hop.swift in Sources */,
+				D74E77432444B62C007315E6 /* BeersRequest.swift in Sources */,
+				D74E7758244632E9007315E6 /* Method.swift in Sources */,
 				D753959F2444B28E00981849 /* SceneDelegate.swift in Sources */,
+				D74E77472444BCF7007315E6 /* Request.swift in Sources */,
+				D74E775E24463344007315E6 /* UnitValue.swift in Sources */,
 				D75395A12444B28E00981849 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
