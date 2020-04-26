@@ -8,20 +8,20 @@
 
 import Foundation
 
-struct Beer: Decodable {
+struct Beer: Decodable, Identifiable {
     let id: String
     let name: String
     let tagline: String
     let firstBrewed: String
     let description: String
     let imageURL: URL
-    let abv: Double
-    let ibu: Double
+    let abv: Double?
+    let ibu: Double?
     let targetFG: Double
     let targetOG: Double
-    let ebc: Double
-    let srm: Double
-    let ph: Double
+    let ebc: Double?
+    let srm: Double?
+    let ph: Double?
     let attenuationLevel: Double
     let volume: Measurement<UnitVolume>
     let boilVolume: Measurement<UnitVolume>
@@ -64,13 +64,13 @@ struct Beer: Decodable {
         firstBrewed = try values.decode(String.self, forKey: .firstBrewed)
         description = try values.decode(String.self, forKey: .description)
         imageURL = try values.decode(URL.self, forKey: .imageURL)
-        abv = try values.decode(Double.self, forKey: .abv)
-        ibu = try values.decode(Double.self, forKey: .ibu)
+        abv = try? values.decode(Double.self, forKey: .abv)
+        ibu = try? values.decode(Double.self, forKey: .ibu)
         targetFG = try values.decode(Double.self, forKey: .targetFG)
         targetOG = try values.decode(Double.self, forKey: .targetOG)
-        ebc = try values.decode(Double.self, forKey: .ebc)
-        srm = try values.decode(Double.self, forKey: .srm)
-        ph = try values.decode(Double.self, forKey: .ph)
+        ebc = try? values.decode(Double.self, forKey: .ebc)
+        srm = try? values.decode(Double.self, forKey: .srm)
+        ph = try? values.decode(Double.self, forKey: .ph)
         attenuationLevel = try values.decode(Double.self, forKey: .attenuationLevel)
         let volumeValue = try values.decode(UnitValue.self, forKey: .volume)
         volume = Measurement(value: volumeValue.value, unit: .liters)

@@ -11,8 +11,8 @@ import Foundation
 final class BeersRequest: Request {
     typealias Response = [Beer]
     
-    var baseURL: URL { URL(string: "https://api.punkapi.com/v2")! }
-    var path: String { "/beers/" }
+    var baseURL: URL { URL(string: "https://api.punkapi.com/")! }
+    var path: String { "v2/beers/" }
     var queryItems: [URLQueryItem]? {
         [.init(name: "page", value: String(page)),
          .init(name: "per_page", value: String(perPage))]

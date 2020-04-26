@@ -10,7 +10,7 @@ import Foundation
 
 struct MashTemperature: Decodable {
     let temp: Measurement<UnitTemperature>
-    let duration: Double
+    let duration: Int?
     
     enum CodingKeys: String, CodingKey {
         case temp
@@ -21,6 +21,6 @@ struct MashTemperature: Decodable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         let unitValue = try values.decode(UnitValue.self, forKey: .temp)
         temp = Measurement(value: unitValue.value, unit: .celsius)
-        duration = try values.decode(Double.self, forKey: .duration)
+        duration = try? values.decode(Int.self, forKey: .duration)
     }
 }

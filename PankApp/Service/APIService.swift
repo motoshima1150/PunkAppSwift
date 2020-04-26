@@ -16,6 +16,7 @@ protocol APIServiceType {
 final class APIService: APIServiceType {
     
     private let session: URLSession
+    
     init(session: URLSession = URLSession.shared) {
         self.session = session
     }
@@ -34,7 +35,7 @@ final class APIService: APIServiceType {
         let decorder = JSONDecoder()
         decorder.keyDecodingStrategy = .convertFromSnakeCase
         return session.dataTaskPublisher(for: request)
-            .map { data, urlResponse in data }
+            .map(\.data)
             .mapError { _ in APIServiceError.responseError }
             .decode(type: T.Response.self, decoder: decorder)
             .mapError(APIServiceError.parseError)
