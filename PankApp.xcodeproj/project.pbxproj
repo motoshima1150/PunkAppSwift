@@ -28,6 +28,7 @@
 		D75395A62444B29000981849 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D75395A52444B29000981849 /* Preview Assets.xcassets */; };
 		D75395A92444B29000981849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75395A72444B29000981849 /* LaunchScreen.storyboard */; };
 		D75395B42444B29100981849 /* PankAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75395B32444B29100981849 /* PankAppTests.swift */; };
+		D7A802CD24553F880071464A /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A802CC24553F880071464A /* BeerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		D75395AF2444B29100981849 /* PankAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PankAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75395B32444B29100981849 /* PankAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PankAppTests.swift; sourceTree = "<group>"; };
 		D75395B52444B29100981849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A802CC24553F880071464A /* BeerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		D74E77612448AB0D007315E6 /* BeerList */ = {
 			isa = PBXGroup;
 			children = (
+				D75395A02444B28E00981849 /* ContentView.swift */,
 				D74E775F2448AB00007315E6 /* BeerListViewModel.swift */,
 			);
 			path = BeerList;
@@ -149,10 +152,10 @@
 		D753959B2444B28E00981849 /* PankApp */ = {
 			isa = PBXGroup;
 			children = (
+				D7A802CB24553F6B0071464A /* BeerDetail */,
 				D74E77612448AB0D007315E6 /* BeerList */,
 				D753959C2444B28E00981849 /* AppDelegate.swift */,
 				D753959E2444B28E00981849 /* SceneDelegate.swift */,
-				D75395A02444B28E00981849 /* ContentView.swift */,
 				D74E774B2444C650007315E6 /* Entity */,
 				D74E77412444B5D8007315E6 /* Service */,
 				D75395A22444B29000981849 /* Assets.xcassets */,
@@ -179,6 +182,14 @@
 				D75395B52444B29100981849 /* Info.plist */,
 			);
 			path = PankAppTests;
+			sourceTree = "<group>";
+		};
+		D7A802CB24553F6B0071464A /* BeerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D7A802CC24553F880071464A /* BeerDetailView.swift */,
+			);
+			path = BeerDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				D753959F2444B28E00981849 /* SceneDelegate.swift in Sources */,
 				D74E77472444BCF7007315E6 /* Request.swift in Sources */,
 				D74E775E24463344007315E6 /* UnitValue.swift in Sources */,
+				D7A802CD24553F880071464A /* BeerDetailView.swift in Sources */,
 				D75395A12444B28E00981849 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,17 +15,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             list(of: viewModel.beers)
+            .navigationBarTitle(Text("Beers"))
         }
         .onAppear {
             self.viewModel.onAppear()
         }
+        
+        
     }
     
     private func list(of beers: [Beer]) -> some View {
         List(beers) { beer in
-            BeerListItemView(beer: beer)
+            NavigationLink(destination: BeerDetailView(beer: beer)) {
+                BeerListItemView(beer: beer)
+            }
         }
-        
     }
 }
 
