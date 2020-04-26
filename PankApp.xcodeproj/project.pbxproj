@@ -20,6 +20,7 @@
 		D74E775A24463310007315E6 /* Fermentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E775924463310007315E6 /* Fermentation.swift */; };
 		D74E775C2446332D007315E6 /* MashTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E775B2446332D007315E6 /* MashTemperature.swift */; };
 		D74E775E24463344007315E6 /* UnitValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E775D24463344007315E6 /* UnitValue.swift */; };
+		D74E77602448AB00007315E6 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74E775F2448AB00007315E6 /* BeerListViewModel.swift */; };
 		D753959D2444B28E00981849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753959C2444B28E00981849 /* AppDelegate.swift */; };
 		D753959F2444B28E00981849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753959E2444B28E00981849 /* SceneDelegate.swift */; };
 		D75395A12444B28E00981849 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75395A02444B28E00981849 /* ContentView.swift */; };
@@ -53,6 +54,7 @@
 		D74E775924463310007315E6 /* Fermentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fermentation.swift; sourceTree = "<group>"; };
 		D74E775B2446332D007315E6 /* MashTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashTemperature.swift; sourceTree = "<group>"; };
 		D74E775D24463344007315E6 /* UnitValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitValue.swift; sourceTree = "<group>"; };
+		D74E775F2448AB00007315E6 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
 		D75395992444B28E00981849 /* PankApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PankApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D753959C2444B28E00981849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D753959E2444B28E00981849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		D74E77612448AB0D007315E6 /* BeerList */ = {
+			isa = PBXGroup;
+			children = (
+				D74E775F2448AB00007315E6 /* BeerListViewModel.swift */,
+			);
+			path = BeerList;
+			sourceTree = "<group>";
+		};
 		D75395902444B28E00981849 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 		D753959B2444B28E00981849 /* PankApp */ = {
 			isa = PBXGroup;
 			children = (
+				D74E77612448AB0D007315E6 /* BeerList */,
 				D753959C2444B28E00981849 /* AppDelegate.swift */,
 				D753959E2444B28E00981849 /* SceneDelegate.swift */,
 				D75395A02444B28E00981849 /* ContentView.swift */,
@@ -280,6 +291,7 @@
 				D74E7756244632D8007315E6 /* Malt.swift in Sources */,
 				D74E775C2446332D007315E6 /* MashTemperature.swift in Sources */,
 				D74E774D2444C668007315E6 /* Beer.swift in Sources */,
+				D74E77602448AB00007315E6 /* BeerListViewModel.swift in Sources */,
 				D74E7754244632C5007315E6 /* Hop.swift in Sources */,
 				D74E77432444B62C007315E6 /* BeersRequest.swift in Sources */,
 				D74E7758244632E9007315E6 /* Method.swift in Sources */,

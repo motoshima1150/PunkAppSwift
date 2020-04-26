@@ -7,15 +7,43 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    @ObservedObject var viewModel: BeerListViewModel
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            list(of: viewModel.beers)
+        }
+        .onAppear {
+            self.viewModel.onAppear()
+        }
+    }
+    
+    private func list(of beers: [Beer]) -> some View {
+        List(beers) { beer in
+            BeerListItemView(beer: beer)
+        }
+        
     }
 }
 
+struct BeerListItemView: View {
+    let beer: Beer
+    
+    var body: some View {
+        VStack {
+            Text(beer.name)
+            Text(beer.description)
+            Text(beer.contributedBy)
+        }
+    }
+}
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: BeerListViewModel())
     }
 }
